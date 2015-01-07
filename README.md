@@ -11,7 +11,7 @@ My preference is not to use XML for configuring spring beans.
 
 You can learn more about REST assured here: https://code.google.com/p/rest-assured/
 
-You can learn more about Spring boot here: http://projects.spring.io/spring-boot/
+You can learn more about Spring Boot here: http://projects.spring.io/spring-boot/
   
 Notice how the representation (Song in the example) is validated during a POST.  
 
