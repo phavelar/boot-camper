@@ -15,7 +15,7 @@
     </scm>
 
     <properties>
-        <start-class>com.precor.fakeSubscriber.Application</start-class>
+        <start-class>author.avelar.paulo.Application</start-class>
         <rest-assured-version>2.4.0</rest-assured-version>
         <javax.inject-version>1</javax.inject-version>
     </properties>
