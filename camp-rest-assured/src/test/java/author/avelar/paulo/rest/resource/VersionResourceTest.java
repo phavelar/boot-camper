@@ -2,6 +2,7 @@ package author.avelar.paulo.rest.resource;
 
 import author.avelar.paulo.Application;
 import com.jayway.restassured.RestAssured;
+import com.jayway.restassured.response.Response;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -12,7 +13,8 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import static com.jayway.restassured.RestAssured.given;
-import static org.hamcrest.core.IsEqual.equalTo;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.springframework.http.HttpStatus.OK;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -34,10 +36,9 @@ public class VersionResourceTest
     @Test
     public void testVersion()
     {
-        given()
-            .get("/version")
-            .then()
-            .body("version", equalTo(version));
-    }
+        Response response = given().contentType("text/html").when().get("/version");
 
+        assertThat(response.asString()).isEqualTo(version);
+        assertThat(response.statusCode()).isEqualTo(OK.value());
+    }
 }

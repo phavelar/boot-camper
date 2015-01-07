@@ -18,6 +18,8 @@
         <start-class>author.avelar.paulo.Application</start-class>
         <rest-assured-version>2.4.0</rest-assured-version>
         <javax.inject-version>1</javax.inject-version>
+        <resource-dir>${basedir}/src/main/resources</resource-dir>
+        <assertj-core-version>1.7.0</assertj-core-version>
     </properties>
 
     <parent>
@@ -53,9 +55,20 @@
             <artifactId>junit</artifactId>
             <scope>test</scope>
         </dependency>
+        <dependency>
+            <groupId>org.assertj</groupId>
+            <artifactId>assertj-core</artifactId>
+            <version>${assertj-core-version}</version>
+        </dependency>
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <filtering>true</filtering>
+                <directory>${resource-dir}</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
