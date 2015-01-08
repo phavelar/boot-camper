@@ -1,4 +1,4 @@
-package author.avelar.paulo.framework.converter;
+package author.avelar.paulo.core.converter;
 
 
 import org.springframework.context.annotation.Bean;

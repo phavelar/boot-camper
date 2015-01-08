@@ -1,6 +1,6 @@
 package author.avelar.paulo.rest.resource;
 
-import author.avelar.paulo.rest.representation.Song;
+import author.avelar.paulo.rest.representation.domain.Song;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

@@ -1,6 +1,6 @@
-package author.avelar.paulo.framework.converter;
+package author.avelar.paulo.core.converter;
 
-import author.avelar.paulo.rest.representation.ErrorsRepresentation;
+import author.avelar.paulo.rest.representation.core.ErrorsRepresentation;
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;

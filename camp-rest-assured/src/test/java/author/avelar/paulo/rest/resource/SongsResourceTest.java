@@ -2,7 +2,7 @@ package author.avelar.paulo.rest.resource;
 
 
 import author.avelar.paulo.Application;
-import author.avelar.paulo.rest.representation.Song;
+import author.avelar.paulo.rest.representation.domain.Song;
 import com.jayway.restassured.RestAssured;
 import org.junit.Before;
 import org.junit.Test;
@@ -13,7 +13,7 @@ import org.springframework.boot.test.SpringApplicationConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
-import static author.avelar.paulo.rest.representation.MusicGenre.ROCK;
+import static author.avelar.paulo.rest.representation.domain.MusicGenre.ROCK;
 import static com.jayway.restassured.RestAssured.given;
 import static com.jayway.restassured.http.ContentType.JSON;
 import static org.hamcrest.Matchers.hasItems;

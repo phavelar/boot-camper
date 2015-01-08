@@ -1,4 +1,4 @@
-package author.avelar.paulo.rest.representation;
+package author.avelar.paulo.rest.representation.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;

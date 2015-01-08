@@ -1,4 +1,4 @@
-package author.avelar.paulo.rest.representation;
+package author.avelar.paulo.rest.representation.domain;
 
 /**
  * Created by paulo on 1/3/2015.

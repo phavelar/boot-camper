@@ -1,6 +1,6 @@
 package author.avelar.paulo.rest.resource;
 
-import author.avelar.paulo.rest.representation.ErrorsRepresentation;
+import author.avelar.paulo.rest.representation.core.ErrorsRepresentation;
 import org.springframework.core.convert.ConversionService;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.MissingServletRequestParameterException;
