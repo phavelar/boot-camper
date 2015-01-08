@@ -11,7 +11,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/songs")
-public class SongsResource
+public class SongsResource extends BaseResource
 {
     private final Logger logger = LoggerFactory.getLogger(getClass());
 
@@ -21,5 +21,4 @@ public class SongsResource
     {
         logger.info("created song: {}", song);
     }
-
 }

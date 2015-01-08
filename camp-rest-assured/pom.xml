@@ -20,6 +20,7 @@
         <javax.inject-version>1</javax.inject-version>
         <resource-dir>${basedir}/src/main/resources</resource-dir>
         <assertj-core-version>1.7.0</assertj-core-version>
+        <commons-lang3-version>3.3.2</commons-lang3-version>
     </properties>
 
     <parent>
@@ -37,6 +38,11 @@
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
             <version>${javax.inject-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>${commons-lang3-version}</version>
         </dependency>
         <!--test dependencies-->
         <dependency>

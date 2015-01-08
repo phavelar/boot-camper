@@ -36,15 +36,14 @@ public final class Song
         this.musicGenre = musicGenre;
     }
 
-    @Size(min = 1, max = 255)
+    @Size(min = 1, max = 255,  message = "name#size#name must be between 1 and 255 characters")
     @NotEmpty
     public String getName()
     {
         return name;
     }
 
-
-    @Max(5410)
+    @Max(value = 5410, message = "durationInSeconds#max#the maximum allowed value is 5410")
     // to allow for the longest song ever
     // @see http://www.guinnessworldrecords.com/world-records/longest-officially-released-song
     public Integer getDurationInSeconds()
@@ -52,19 +51,19 @@ public final class Song
         return durationInSeconds;
     }
 
-    @URL
+    @URL(message = "artistUrl#format#must be a valid URL")
     public String getArtistUrl()
     {
         return artistUrl;
     }
 
-    @URL
+    @URL(message = "lyricsUrl#format#must be a valid URL")
     public String getLyricsUrl()
     {
         return lyricsUrl;
     }
 
-    @NotNull
+    @NotNull(message = "musicGenre#invalid#must not be null")
     public MusicGenre getMusicGenre()
     {
         return musicGenre;
