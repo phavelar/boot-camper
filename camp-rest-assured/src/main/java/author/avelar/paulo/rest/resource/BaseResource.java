@@ -7,7 +7,7 @@ import org.springframework.web.bind.MissingServletRequestParameterException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.servlet.mvc.multiaction.NoSuchRequestHandlingMethodException;
+import org.springframework.web.servlet.NoHandlerFoundException;
 
 import javax.inject.Inject;
 import javax.inject.Named;
@@ -21,7 +21,7 @@ public class BaseResource
     @Inject
     protected ConversionService conversionService;
 
-    @ExceptionHandler({NoSuchRequestHandlingMethodException.class})
+    @ExceptionHandler({NoHandlerFoundException.class})
     @ResponseStatus(NOT_ACCEPTABLE)
     public void handleMediaTypeNotAcceptable()
     {
