@@ -20,7 +20,7 @@
         <javax.inject-version>1</javax.inject-version>
         <resource-dir>${basedir}/src/main/resources</resource-dir>
         <assertj-core-version>1.7.0</assertj-core-version>
-        <commons-lang3-version>3.3.2</commons-lang3-version>
+        <commons-lang3-version>3.18.0</commons-lang3-version>
     </properties>
 
     <parent>
